@@ -52,10 +52,6 @@ No server setup required! This is a pure HTML, CSS, and JavaScript application.
 
 The application uses the Google Gemini API for generating questions and evaluating code solutions. The API key is included in the script.js and script2.js files:
 
-```javascript
-const API_KEY = "AIzaSyAXiO-3nKD9QUNNIiAYHwcw5GE7NDeLa8c";
-```
-
 Note: In a production environment, it's recommended to secure your API keys with proper authentication and authorization methods.
 
 ## Technical Details
