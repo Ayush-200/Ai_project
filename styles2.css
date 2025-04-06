@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    color: #2563eb;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.nav-buttons {
+    margin-top: 15px;
+}
+
+#mcq-quiz-btn {
+    background-color: #3b82f6;
+    margin: 0 auto;
+}
+
+#mcq-quiz-btn:hover {
+    background-color: #2563eb;
+}
+
+.challenge-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.challenge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#category-selector {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.category-btn {
+    padding: 8px 16px;
+    background: #e2e8f0;
+    color: #1e293b;
+    border-radius: 20px;
+}
+
+.category-btn:hover {
+    background: #cbd5e1;
+}
+
+.progress {
+    font-weight: 500;
+    color: #64748b;
+}
+
+#challenge-content {
+    margin-top: 20px;
+}
+
+.challenge-description {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+#challenge-title {
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+#challenge-difficulty {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.difficulty-easy {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.difficulty-medium {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.difficulty-hard {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+#challenge-description-text {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#challenge-examples {
+    margin: 15px 0;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+.example {
+    margin-bottom: 15px;
+}
+
+.example-header {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.example-content {
+    font-family: 'Roboto Mono', monospace;
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+#challenge-constraints {
+    margin-top: 15px;
+    padding: 10px;
+    background: #eff6ff;
+    border-left: 3px solid #3b82f6;
+    border-radius: 0 6px 6px 0;
+}
+
+.challenge-solution {
+    margin-bottom: 30px;
+}
+
+.code-editor-container {
+    margin-top: 15px;
+}
+
+#language-selector {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.code-editor {
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#code-editor {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    resize: vertical;
+    border: none;
+}
+
+.editor-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#run-btn {
+    background-color: #10b981;
+}
+
+#run-btn:hover {
+    background-color: #059669;
+}
+
+#result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+#output-container {
+    margin-top: 10px;
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+#output {
+    white-space: pre-wrap;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+}
+
+#feedback-container {
+    margin-top: 15px;
+    padding: 15px;
+    background: #ffffff;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 6px 6px 0;
+}
+
+.navigation-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #a5b4fc;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+.success {
+    color: #10b981;
+}
+
+.error {
+    color: #ef4444;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .challenge-container {
+        padding: 20px;
+    }
+    
+    .navigation-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    button {
+        width: 100%;
+    }
+    
+    .challenge-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+/* Add styles for the API error message */
+#api-error {
+    margin: 20px 0;
+}
+
+.error-message {
+    background-color: #fff8f8;
+    border: 1px solid #fecaca;
+    border-left: 5px solid #ef4444;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.error-message h3 {
+    color: #b91c1c;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.error-message ul {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+.error-message li {
+    margin-bottom: 5px;
+}
+
+.troubleshooting {
+    margin-top: 15px;
+    background-color: #f9fafb;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.troubleshooting h4 {
+    color: #1e40af;
+    margin-bottom: 8px;
+}
+
+.error-btn {
+    background-color: #ef4444;
+    margin-top: 15px;
+}
+
+.error-btn:hover {
+    background-color: #b91c1c;
+} 

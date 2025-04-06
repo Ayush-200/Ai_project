@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz - Coding Challenges</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CodeQuiz Challenges</h1>
+            <p>Solve real coding problems and submit your solutions</p>
+            <div class="nav-buttons">
+                <button id="mcq-quiz-btn" onclick="window.location.href='index.html'">MCQ Quiz</button>
+            </div>
+        </header>
+
+        <div class="challenge-container">
+            <div class="challenge-header">
+                <h2 id="category">Select a category to begin</h2>
+                <div class="progress">
+                    <span id="current-challenge">0</span>/<span id="total-challenges">0</span>
+                </div>
+            </div>
+
+            <div id="api-error" class="hidden">
+                <div class="error-message">
+                    <h3>⚠️ API Connection Issue</h3>
+                    <p>We're having trouble connecting to the Gemini API. This might be due to:</p>
+                    <ul>
+                        <li>API key restrictions or quota limits</li>
+                        <li>Network connectivity issues</li>
+                        <li>Temporary API service disruption</li>
+                    </ul>
+                    <p>The application will use fallback challenges instead. You can still work on coding problems, but automated evaluation might be limited.</p>
+                    <div class="troubleshooting">
+                        <h4>Troubleshooting:</h4>
+                        <p>1. Check your browser console for specific error messages</p>
+                        <p>2. Verify the API key is active and has proper permissions</p>
+                        <p>3. Try again later if the issue persists</p>
+                    </div>
+                    <button id="dismiss-error" class="error-btn">Continue with Fallback Challenges</button>
+                </div>
+            </div>
+
+            <div id="category-selector">
+                <h3>Select a Programming Category</h3>
+                <div class="category-buttons">
+                    <button class="category-btn" data-category="javascript">JavaScript</button>
+                    <button class="category-btn" data-category="python">Python</button>
+                    <button class="category-btn" data-category="java">Java</button>
+                    <button class="category-btn" data-category="cpp">C++</button>
+                    <button class="category-btn" data-category="algorithms">Algorithms</button>
+                </div>
+            </div>
+
+            <div id="challenge-content" class="hidden">
+                <div class="challenge-description">
+                    <h3 id="challenge-title">Challenge Title</h3>
+                    <p id="challenge-difficulty"></p>
+                    <div id="challenge-description-text"></div>
+                    <div id="challenge-examples"></div>
+                    <div id="challenge-constraints"></div>
+                </div>
+
+                <div class="challenge-solution">
+                    <h3>Your Solution</h3>
+                    <div class="code-editor-container">
+                        <select id="language-selector">
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="cpp">C++</option>
+                        </select>
+                        <div class="code-editor">
+                            <textarea id="code-editor" placeholder="Write your solution here..."></textarea>
+                        </div>
+                        <div class="editor-controls">
+                            <button id="run-btn">Run Code</button>
+                            <button id="submit-btn">Submit Solution</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="result-container" class="hidden">
+                    <h3>Result</h3>
+                    <div id="output-container">
+                        <pre id="output"></pre>
+                    </div>
+                    <div id="feedback-container" class="hidden">
+                        <h4>Feedback</h4>
+                        <p id="feedback-text"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-controls">
+                <button id="prev-btn" disabled>Previous Challenge</button>
+                <button id="next-btn" disabled>Next Challenge</button>
+                <button id="new-challenge-btn" class="hidden">New Challenges</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html> 

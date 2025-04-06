@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz - Coding MCQ Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div> <h6 style="color:blue;text-align:center;">Made by Ayush Bhatia 12303639 <br>
+         Harshit Chaudhary 12306116</h1>
+    </div>
+    <div class="container">
+        <header>
+            <h1>CodeQuiz</h1>
+            <p>Test your coding knowledge with MCQ challenges</p>
+            <div class="nav-buttons">
+                <button id="code-challenges-btn" onclick="window.location.href='index2.html'">Coding Challenges</button>
+            </div>
+        </header>
+
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h2 id="category">Loading questions...</h2>
+                <div class="progress">
+                    <span id="current-question">0</span>/<span id="total-questions">0</span>
+                </div>
+            </div>
+
+            <div id="question-container">
+                <p id="question-text">Please wait while we load questions...</p>
+                <div id="options-container">
+                    <!-- Options will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="prev-btn" disabled>Previous</button>
+                <button id="next-btn" disabled>Next</button>
+                <button id="submit-btn">Submit</button>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2>Quiz Results</h2>
+                <p>You scored <span id="score">0</span> out of <span id="total-score">0</span></p>
+                <button id="restart-btn">Try Again</button>
+            </div>
+
+            <div id="category-selector">
+                <h3>Select a Programming Category</h3>
+                <div class="category-buttons">
+                    <button class="category-btn" data-category="javascript">JavaScript</button>
+                    <button class="category-btn" data-category="python">Python</button>
+                    <button class="category-btn" data-category="java">Java</button>
+                    <button class="category-btn" data-category="cpp">C++</button>
+                    <button class="category-btn" data-category="web">Web Development</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
