@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #f3f4f6;
-    color: #333;
+    background: #F5EEDC;
+    color: #183B4E;
     line-height: 1.6;
 }
 
@@ -23,11 +23,11 @@ header {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #DDA853;
 }
 
 header h1 {
-    color: #930d50;
+    color: #27548A;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
@@ -37,16 +37,25 @@ header h1 {
 }
 
 #code-challenges-btn {
-    background-color: #aa3c6a;
+    background-color: #FE7743;
+    margin: 0 auto;
+}
+
+#ai-assistant-btn {
+    background-color: #27548A;
     margin: 0 auto;
 }
 
 #code-challenges-btn:hover {
-    background-color: #059669;
+    background-color: #DDA853;
+}
+
+#ai-assistant-btn:hover {
+    background-color: #183B4E;
 }
 
 .quiz-container {
-    background: #ffffff;
+    background: #EFEEEA;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -58,7 +67,7 @@ header h1 {
     align-items: center;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #DDA853;
 }
 
 #question-container {
@@ -69,6 +78,7 @@ header h1 {
     font-size: 1.2rem;
     margin-bottom: 20px;
     line-height: 1.5;
+    color: #273F4F;
 }
 
 #options-container {
@@ -78,40 +88,45 @@ header h1 {
 
 .option {
     padding: 12px 15px;
-    background: #4042417d;
-    border: 1px solid #ffffff;
+    background: #EFEEEA;
+    border: 1px solid #DDA853;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s ease;
+    color: #183B4E;
 }
 
 .option:hover {
-    background: #ededed;
+    background: #DDA853;
+    color: #EFEEEA;
 }
 
 .option.selected {
-    background: #dbeafe;
-    border-color: #ffffff;
+    background: #27548A;
+    border-color: #27548A;
+    color: #EFEEEA;
 }
 
 .option.correct {
-    background: #d1fae5;
-    border-color: #10b981;
+    background: #DDA853;
+    border-color: #DDA853;
+    color: #EFEEEA;
 }
 
 .option.incorrect {
-    background: #fee2e2;
-    border-color: #ef4444;
+    background: #FE7743;
+    border-color: #FE7743;
+    color: #EFEEEA;
 }
 
 .explanation {
     margin-top: 15px;
     padding: 15px;
-    background: #f8fafc;
-    border-left: 4px solid #3b82f6;
+    background: #EFEEEA;
+    border-left: 4px solid #27548A;
     border-radius: 0 6px 6px 0;
     font-style: italic;
-    color: #4b5563;
+    color: #183B4E;
 }
 
 .controls {
@@ -124,19 +139,19 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    background: #8f9cba;
-    color: white;
+    background: #27548A;
+    color: #EFEEEA;
     font-weight: 500;
     cursor: pointer;
     transition: background 0.2s ease;
 }
 
 button:hover {
-    background: #1d4ed8;
+    background: #183B4E;
 }
 
 button:disabled {
-    background: #a5b4fc;
+    background: #273F4F;
     cursor: not-allowed;
 }
 
@@ -146,7 +161,7 @@ button:disabled {
 }
 
 #result-container h2 {
-    color: #2563eb;
+    color: #27548A;
     margin-bottom: 15px;
 }
 
@@ -173,18 +188,20 @@ button:disabled {
 
 .category-btn {
     padding: 8px 16px;
-    background: #e2e8f0;
-    color: #1e293b;
+    background: #EFEEEA;
+    color: #183B4E;
     border-radius: 20px;
+    border: 1px solid #DDA853;
 }
 
 .category-btn:hover {
-    background: #cbd5e1;
+    background: #DDA853;
+    color: #EFEEEA;
 }
 
 .progress {
     font-weight: 500;
-    color: #64748b;
+    color: #273F4F;
 }
 
 @media (max-width: 768px) {
