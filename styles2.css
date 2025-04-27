@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #f3f4f6;
-    color: #333;
+    background: #F5EEDC;
+    color: #183B4E;
     line-height: 1.6;
 }
 
@@ -23,11 +23,11 @@ header {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #DDA853;
 }
 
 header h1 {
-    color: #2563eb;
+    color: #27548A;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
@@ -37,16 +37,16 @@ header h1 {
 }
 
 #mcq-quiz-btn {
-    background-color: #3b82f6;
+    background-color: #FE7743;
     margin: 0 auto;
 }
 
 #mcq-quiz-btn:hover {
-    background-color: #2563eb;
+    background-color: #DDA853;
 }
 
 .challenge-container {
-    background: #fff;
+    background: #EFEEEA;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -58,7 +58,7 @@ header h1 {
     align-items: center;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #DDA853;
 }
 
 #category-selector {
@@ -76,18 +76,20 @@ header h1 {
 
 .category-btn {
     padding: 8px 16px;
-    background: #e2e8f0;
-    color: #1e293b;
+    background: #EFEEEA;
+    color: #183B4E;
     border-radius: 20px;
+    border: 1px solid #DDA853;
 }
 
 .category-btn:hover {
-    background: #cbd5e1;
+    background: #DDA853;
+    color: #EFEEEA;
 }
 
 .progress {
     font-weight: 500;
-    color: #64748b;
+    color: #273F4F;
 }
 
 #challenge-content {
@@ -97,12 +99,13 @@ header h1 {
 .challenge-description {
     margin-bottom: 30px;
     padding: 20px;
-    background: #f8fafc;
+    background: #EFEEEA;
     border-radius: 8px;
+    border: 1px solid #DDA853;
 }
 
 #challenge-title {
-    color: #1e40af;
+    color: #27548A;
     margin-bottom: 10px;
 }
 
@@ -116,18 +119,18 @@ header h1 {
 }
 
 .difficulty-easy {
-    background: #d1fae5;
-    color: #047857;
+    background: #DDA853;
+    color: #183B4E;
 }
 
 .difficulty-medium {
-    background: #fef3c7;
-    color: #b45309;
+    background: #FE7743;
+    color: #EFEEEA;
 }
 
 .difficulty-hard {
-    background: #fee2e2;
-    color: #b91c1c;
+    background: #27548A;
+    color: #EFEEEA;
 }
 
 #challenge-description-text {
@@ -138,8 +141,8 @@ header h1 {
 #challenge-examples {
     margin: 15px 0;
     padding: 15px;
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
+    background: #EFEEEA;
+    border: 1px solid #DDA853;
     border-radius: 6px;
 }
 
@@ -154,7 +157,7 @@ header h1 {
 
 .example-content {
     font-family: 'Roboto Mono', monospace;
-    background: #f1f5f9;
+    background: #F5EEDC;
     padding: 10px;
     border-radius: 4px;
     overflow-x: auto;
@@ -163,8 +166,8 @@ header h1 {
 #challenge-constraints {
     margin-top: 15px;
     padding: 10px;
-    background: #eff6ff;
-    border-left: 3px solid #3b82f6;
+    background: #EFEEEA;
+    border-left: 3px solid #27548A;
     border-radius: 0 6px 6px 0;
 }
 
@@ -180,13 +183,15 @@ header h1 {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #d1d5db;
+    border: 1px solid #DDA853;
     border-radius: 4px;
     font-size: 1rem;
+    background: #EFEEEA;
+    color: #183B4E;
 }
 
 .code-editor {
-    border: 1px solid #d1d5db;
+    border: 1px solid #DDA853;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -200,6 +205,8 @@ header h1 {
     line-height: 1.6;
     resize: vertical;
     border: none;
+    background: #EFEEEA;
+    color: #183B4E;
 }
 
 .editor-controls {
@@ -210,24 +217,25 @@ header h1 {
 }
 
 #run-btn {
-    background-color: #10b981;
+    background-color: #DDA853;
 }
 
 #run-btn:hover {
-    background-color: #059669;
+    background-color: #FE7743;
 }
 
 #result-container {
     margin-top: 20px;
     padding: 15px;
-    background: #f8fafc;
+    background: #EFEEEA;
     border-radius: 8px;
+    border: 1px solid #DDA853;
 }
 
 #output-container {
     margin-top: 10px;
-    background: #1e293b;
-    color: #f8fafc;
+    background: #183B4E;
+    color: #EFEEEA;
     padding: 15px;
     border-radius: 6px;
     overflow-x: auto;
@@ -242,8 +250,8 @@ header h1 {
 #feedback-container {
     margin-top: 15px;
     padding: 15px;
-    background: #ffffff;
-    border-left: 4px solid #3b82f6;
+    background: #EFEEEA;
+    border-left: 4px solid #27548A;
     border-radius: 0 6px 6px 0;
 }
 
@@ -257,19 +265,19 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    background: #2563eb;
-    color: white;
+    background: #27548A;
+    color: #EFEEEA;
     font-weight: 500;
     cursor: pointer;
     transition: background 0.2s ease;
 }
 
 button:hover {
-    background: #1d4ed8;
+    background: #183B4E;
 }
 
 button:disabled {
-    background: #a5b4fc;
+    background: #273F4F;
     cursor: not-allowed;
 }
 
@@ -278,11 +286,11 @@ button:disabled {
 }
 
 .success {
-    color: #10b981;
+    color: #DDA853;
 }
 
 .error {
-    color: #ef4444;
+    color: #FE7743;
 }
 
 @media (max-width: 768px) {
@@ -316,16 +324,16 @@ button:disabled {
 }
 
 .error-message {
-    background-color: #fff8f8;
-    border: 1px solid #fecaca;
-    border-left: 5px solid #ef4444;
+    background-color: #EFEEEA;
+    border: 1px solid #FE7743;
+    border-left: 5px solid #FE7743;
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .error-message h3 {
-    color: #b91c1c;
+    color: #FE7743;
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
@@ -341,21 +349,22 @@ button:disabled {
 
 .troubleshooting {
     margin-top: 15px;
-    background-color: #f9fafb;
+    background-color: #EFEEEA;
     padding: 10px 15px;
     border-radius: 4px;
+    border: 1px solid #DDA853;
 }
 
 .troubleshooting h4 {
-    color: #1e40af;
+    color: #27548A;
     margin-bottom: 8px;
 }
 
 .error-btn {
-    background-color: #ef4444;
+    background-color: #FE7743;
     margin-top: 15px;
 }
 
 .error-btn:hover {
-    background-color: #b91c1c;
+    background-color: #DDA853;
 } 
