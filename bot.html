@@ -165,6 +165,50 @@
         }
 
         async function getBotResponse(userMessage) {
+            // Check if the question is about who created the bot
+            const creatorPhrases = [
+                'who created you',
+                'who made you',
+                'who developed you',
+                'who built you',
+                'who designed you',
+                'who programmed you',
+                'who coded you',
+                'who is your creator',
+                'who is your developer',
+                'who is your programmer',
+                'who is your maker',
+                'who is your builder',
+                'who is your designer',
+                'who are your creators',
+                'who are your developers',
+                'who are your programmers',
+                'who are your makers',
+                'who are your builders',
+                'who are your designers',
+                'tell me about your creator',
+                'tell me about your developers',
+                'tell me about your programmers',
+                'tell me about your makers',
+                'tell me about your builders',
+                'tell me about your designers',
+                'who is responsible for you',
+                'who is behind you',
+                'who is behind your creation',
+                'who is responsible for your creation',
+                'who is responsible for your development',
+                'who is responsible for your programming',
+                'who is responsible for your coding',
+                'who is responsible for your design',
+                'who is responsible for your building',
+                'who is responsible for your making'
+            ];
+
+            const lowerMessage = userMessage.toLowerCase();
+            if (creatorPhrases.some(phrase => lowerMessage.includes(phrase))) {
+                return "I was created by Ayush and Harshit!";
+            }
+
             try {
                 const response = await fetch(`${GEMINI_API_URL}?key=${GEMINI_API_KEY}`, {
                     method: 'POST',
@@ -207,6 +251,33 @@
                 showTypingIndicator();
                 try {
                     const response = await getBotResponse(message);
+                    
+                    // Check if it's a creator-related question
+                    const creatorPhrases = [
+                        'who created you', 'who made you', 'who developed you', 'who built you',
+                        'who designed you', 'who programmed you', 'who coded you', 'who is your creator',
+                        'who is your developer', 'who is your programmer', 'who is your maker',
+                        'who is your builder', 'who is your designer', 'who are your creators',
+                        'who are your developers', 'who are your programmers', 'who are your makers',
+                        'who are your builders', 'who are your designers', 'tell me about your creator',
+                        'tell me about your developers', 'tell me about your programmers',
+                        'tell me about your makers', 'tell me about your builders',
+                        'tell me about your designers', 'who is responsible for you',
+                        'who is behind you', 'who is behind your creation',
+                        'who is responsible for your creation', 'who is responsible for your development',
+                        'who is responsible for your programming', 'who is responsible for your coding',
+                        'who is responsible for your design', 'who is responsible for your building',
+                        'who is responsible for your making'
+                    ];
+
+                    const lowerMessage = message.toLowerCase();
+                    const isCreatorQuestion = creatorPhrases.some(phrase => lowerMessage.includes(phrase));
+
+                    // Add delay only for creator-related questions
+                    if (isCreatorQuestion) {
+                        await new Promise(resolve => setTimeout(resolve, 2600));
+                    }
+
                     hideTypingIndicator();
                     addMessage(response);
                 } catch (error) {
